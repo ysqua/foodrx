@@ -95,7 +95,7 @@ Generate all 7 days (Monday–Sunday) and 12–15 grocery items. Keep total ≤ 
     const client = new Anthropic();
 
     const message = await client.messages.create({
-      model: "claude-sonnet-4-5-20251001",
+      model: "claude-sonnet-4-5",
       max_tokens: 4000,
       messages: [{ role: "user", content: prompt }],
     });
